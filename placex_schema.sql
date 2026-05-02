@@ -1,0 +1,1 @@
+ALTER TABLE student ADD is_placed TINYINT(1) DEFAULT 0;	 

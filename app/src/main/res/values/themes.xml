@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PlaceX" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/textPrimary</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <item name="colorError">@color/colorError</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/colorBackground</item>
+        <!-- TextInputLayout outline colour -->
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlNormal">#4DFFFFFF</item>
+    </style>
+
+    <style name="Theme.PlaceX.Splash" parent="Theme.PlaceX">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

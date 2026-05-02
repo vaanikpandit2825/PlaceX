@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#0F1624" android:fillViewport="true">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+            <ImageButton android:id="@+id/btnBack"
+                android:layout_width="40dp" android:layout_height="40dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:background="@android:color/transparent"
+                android:tint="#FFFFFF" android:contentDescription="Back"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Academic Info" android:textColor="#FFFFFF"
+                android:textSize="20sp" android:textStyle="bold" android:layout_marginStart="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center" android:layout_marginBottom="24dp">
+            <View android:layout_width="60dp" android:layout_height="4dp" android:background="#4A90E2" android:layout_marginEnd="4dp"/>
+            <View android:layout_width="60dp" android:layout_height="4dp" android:background="#4A90E2"/>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="College / University Name" android:layout_marginBottom="14dp" android:textColorHint="#80FFFFFF">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etCollege"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="text" android:textColor="#FFFFFF"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="10th Percentage (e.g. 85.0)" android:layout_marginBottom="14dp" android:textColorHint="#80FFFFFF">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etTenth"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="numberDecimal" android:textColor="#FFFFFF"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="12th Percentage (e.g. 90.0)" android:layout_marginBottom="14dp" android:textColorHint="#80FFFFFF">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etTwelfth"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="numberDecimal" android:textColor="#FFFFFF"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Current CGPA (0.0 – 10.0)" android:layout_marginBottom="28dp" android:textColorHint="#80FFFFFF">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etCgpa"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="numberDecimal" android:textColor="#FFFFFF"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNext2"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="SAVE &amp; FINISH " android:textSize="16sp"
+            android:backgroundTint="#4CAF50"/>
+    </LinearLayout>
+</ScrollView>

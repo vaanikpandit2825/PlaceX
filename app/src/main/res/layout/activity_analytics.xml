@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#0F1624">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+            <ImageButton android:id="@+id/btnBack"
+                android:layout_width="40dp" android:layout_height="40dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:background="@android:color/transparent"
+                android:tint="#FFFFFF" android:contentDescription="Back"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Placement Analytics" android:textColor="#FFFFFF"
+                android:textSize="20sp" android:textStyle="bold" android:layout_marginStart="12dp"/>
+        </LinearLayout>
+
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text=" Platform Overview" android:textColor="#4A90E2"
+            android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="10dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:weightSum="2" android:layout_marginBottom="8dp">
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginEnd="6dp"
+                app:cardBackgroundColor="#1E2D40" app:cardCornerRadius="10dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="14dp" android:gravity="center">
+                    <TextView android:id="@+id/tvTotalStudents" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textColor="#4A90E2"
+                        android:textSize="28sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Students" android:textColor="#B3FFFFFF" android:textSize="12sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginStart="6dp"
+                app:cardBackgroundColor="#1E2D40" app:cardCornerRadius="10dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="14dp" android:gravity="center">
+                    <TextView android:id="@+id/tvTotalJobs" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textColor="#FF9800"
+                        android:textSize="28sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Active Jobs" android:textColor="#B3FFFFFF" android:textSize="12sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:weightSum="2" android:layout_marginBottom="8dp">
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginEnd="6dp"
+                app:cardBackgroundColor="#1E2D40" app:cardCornerRadius="10dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="14dp" android:gravity="center">
+                    <TextView android:id="@+id/tvTotalCompanies" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textColor="#9C27B0"
+                        android:textSize="28sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Companies" android:textColor="#B3FFFFFF" android:textSize="12sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginStart="6dp"
+                app:cardBackgroundColor="#1E2D40" app:cardCornerRadius="10dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="14dp" android:gravity="center">
+                    <TextView android:id="@+id/tvPlaced" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textColor="#4CAF50"
+                        android:textSize="28sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Placed" android:textColor="#B3FFFFFF" android:textSize="12sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:weightSum="3" android:layout_marginBottom="20dp">
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginEnd="4dp"
+                app:cardBackgroundColor="#1E2D40" app:cardCornerRadius="10dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="12dp" android:gravity="center">
+                    <TextView android:id="@+id/tvTotalApps" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textColor="#64B5F6"
+                        android:textSize="22sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Apps" android:textColor="#B3FFFFFF" android:textSize="11sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginHorizontal="4dp"
+                app:cardBackgroundColor="#1E2D40" app:cardCornerRadius="10dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="12dp" android:gravity="center">
+                    <TextView android:id="@+id/tvAvgPackage" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textColor="#4CAF50"
+                        android:textSize="14sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Avg Pkg" android:textColor="#B3FFFFFF" android:textSize="11sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginStart="4dp"
+                app:cardBackgroundColor="#1E2D40" app:cardCornerRadius="10dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="12dp" android:gravity="center">
+                    <TextView android:id="@+id/tvMaxPackage" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textColor="#FF9800"
+                        android:textSize="14sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Max Pkg" android:textColor="#B3FFFFFF" android:textSize="11sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- My stats -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="👤 My Statistics" android:textColor="#4A90E2"
+            android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="10dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:weightSum="4" android:layout_marginBottom="20dp">
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginEnd="4dp"
+                app:cardBackgroundColor="#1E2D40" app:cardCornerRadius="10dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="10dp" android:gravity="center">
+                    <TextView android:id="@+id/tvMyApplied" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textColor="#64B5F6"
+                        android:textSize="22sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Applied" android:textColor="#B3FFFFFF" android:textSize="10sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginHorizontal="2dp"
+                app:cardBackgroundColor="#1E2D40" app:cardCornerRadius="10dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="10dp" android:gravity="center">
+                    <TextView android:id="@+id/tvMyInterview" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textColor="#FF9800"
+                        android:textSize="22sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Interview" android:textColor="#B3FFFFFF" android:textSize="10sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginHorizontal="2dp"
+                app:cardBackgroundColor="#1E2D40" app:cardCornerRadius="10dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="10dp" android:gravity="center">
+                    <TextView android:id="@+id/tvMyPlaced" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textColor="#4CAF50"
+                        android:textSize="22sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Selected" android:textColor="#B3FFFFFF" android:textSize="10sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginStart="4dp"
+                app:cardBackgroundColor="#1E2D40" app:cardCornerRadius="10dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="10dp" android:gravity="center">
+                    <TextView android:id="@+id/tvMyRejected" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textColor="#F44336"
+                        android:textSize="22sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Rejected" android:textColor="#B3FFFFFF" android:textSize="10sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Above avg CGPA -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#1B2E1B" app:cardCornerRadius="10dp"
+            android:layout_marginBottom="20dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:padding="14dp" android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Students above average CGPA (sub-query)"
+                    android:textColor="#B3FFFFFF" android:textSize="13sp"/>
+                <TextView android:id="@+id/tvAboveAvg" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textColor="#4CAF50"
+                    android:textSize="24sp" android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Application status breakdown -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Application Status Breakdown (GROUP BY)"
+            android:textColor="#4A90E2" android:textSize="15sp" android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#1E2D40" app:cardCornerRadius="10dp"
+            android:layout_marginBottom="20dp">
+            <LinearLayout android:id="@+id/llStatusBreakdown"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Company job stats -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Top Companies by Package (JOIN + GROUP BY)"
+            android:textColor="#4A90E2" android:textSize="15sp" android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#1E2D40" app:cardCornerRadius="10dp"
+            android:layout_marginBottom="20dp">
+            <LinearLayout android:id="@+id/llCompanyStats"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Branch breakdown -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Branch-wise Student Count (GROUP BY)"
+            android:textColor="#4A90E2" android:textSize="15sp" android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#1E2D40" app:cardCornerRadius="10dp"
+            android:layout_marginBottom="24dp">
+            <LinearLayout android:id="@+id/llBranchBreakdown"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

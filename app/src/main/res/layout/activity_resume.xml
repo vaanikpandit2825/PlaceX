@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#0F1624">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <!-- Toolbar -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+            <ImageButton android:id="@+id/btnBack"
+                android:layout_width="40dp" android:layout_height="40dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:background="@android:color/transparent"
+                android:tint="#FFFFFF" android:contentDescription="Back"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="My Resume" android:textColor="#FFFFFF"
+                android:textSize="20sp" android:textStyle="bold" android:layout_marginStart="12dp"/>
+        </LinearLayout>
+
+        <!-- Student header card -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#1E2D40" app:cardCornerRadius="12dp"
+            android:layout_marginBottom="20dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:id="@+id/tvStudentName"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF" android:textSize="20sp" android:textStyle="bold"/>
+                <TextView android:id="@+id/tvStudentEmail"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="#4A90E2" android:textSize="14sp"/>
+                <TextView android:id="@+id/tvStudentBranch"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="#B3FFFFFF" android:textSize="13sp"/>
+                <TextView android:id="@+id/tvStudentCgpa"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="#4CAF50" android:textSize="14sp" android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Skills -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🛠 Skills" android:textColor="#FFFFFF"
+            android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="e.g. Kotlin, Python, SQL, Firebase" android:layout_marginBottom="16dp" android:textColorHint="#80FFFFFF">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etSkills"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="textMultiLine" android:textColor="#FFFFFF" android:minLines="2"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Experience -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="💼 Work Experience" android:textColor="#FFFFFF"
+            android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Company, Role, Duration" android:layout_marginBottom="16dp" android:textColorHint="#80FFFFFF">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etExperience"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="textMultiLine" android:textColor="#FFFFFF" android:minLines="3"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Projects -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="📁 Projects" android:textColor="#FFFFFF"
+            android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Project Name, Description, Tech Stack" android:layout_marginBottom="16dp" android:textColorHint="#80FFFFFF">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etProjects"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="textMultiLine" android:textColor="#FFFFFF" android:minLines="3"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Certifications -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🏅 Certifications" android:textColor="#FFFFFF"
+            android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Certificate Name, Issuer" android:layout_marginBottom="24dp" android:textColorHint="#80FFFFFF">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etCertifications"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="textMultiLine" android:textColor="#FFFFFF" android:minLines="2"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEditResume"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="✏️  EDIT RESUME" android:textSize="15sp"
+            android:backgroundTint="#263850" android:layout_marginBottom="10dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveResume"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="💾  SAVE RESUME" android:textSize="15sp"
+            android:backgroundTint="#4A90E2"/>
+    </LinearLayout>
+</ScrollView>

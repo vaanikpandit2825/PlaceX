@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PlaceX</string>
+    <string-array name="job_types">
+        <item>Full Time</item>
+        <item>Internship</item>
+        <item>Part Time</item>
+        <item>Contract</item>
+    </string-array>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#0F1624" android:fillViewport="true">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <!-- Toolbar -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+            <ImageButton android:id="@+id/btnBack"
+                android:layout_width="40dp" android:layout_height="40dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:background="@android:color/transparent"
+                android:tint="#FFFFFF" android:contentDescription="Back"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Personal Info" android:textColor="#FFFFFF"
+                android:textSize="20sp" android:textStyle="bold" android:layout_marginStart="12dp"/>
+        </LinearLayout>
+
+        <!-- Step indicator -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center" android:layout_marginBottom="24dp">
+            <View android:layout_width="60dp" android:layout_height="4dp" android:background="#4A90E2" android:layout_marginEnd="4dp"/>
+            <View android:layout_width="60dp" android:layout_height="4dp" android:background="#263850"/>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Full Name" android:layout_marginBottom="14dp" android:textColorHint="#80FFFFFF">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etName"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="textPersonName" android:textColor="#FFFFFF"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Phone Number" android:layout_marginBottom="14dp" android:textColorHint="#80FFFFFF">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etPhone"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="phone" android:textColor="#FFFFFF" android:maxLength="10"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Date of Birth (tap to pick)" android:layout_marginBottom="14dp" android:textColorHint="#80FFFFFF">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etDob"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textColor="#FFFFFF" android:focusable="true" android:clickable="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Gender (Male / Female / Other)" android:layout_marginBottom="14dp" android:textColorHint="#80FFFFFF">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etGender"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="text" android:textColor="#FFFFFF"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Home Address" android:layout_marginBottom="24dp" android:textColorHint="#80FFFFFF">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etAddress"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="textMultiLine" android:textColor="#FFFFFF" android:minLines="2"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="NEXT" android:textSize="16sp"
+            android:backgroundTint="#4A90E2"/>
+    </LinearLayout>
+</ScrollView>
